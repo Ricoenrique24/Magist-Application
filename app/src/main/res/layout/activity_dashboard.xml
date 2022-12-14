@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical"
+    tools:context=".dashboard.DashboardActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RINGKASAN BISNIS"
+        android:textColor="#304BFF"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="81dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/border1"
+        android:background="@drawable/border_dashboard"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL PENJUALAN"
+        android:id="@+id/totalpenjualan"
+        android:textColor="#304BFF"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="142dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/birtu1"
+        android:background="@drawable/birutua"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="173dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/birmu1"
+        android:background="@drawable/birumuda"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="173dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/rupiah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.000.000"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="183dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12-Desember-2022"
+        android:textColor="#304BFF"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <ImageView
+        android:id="@+id/border2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_dashboard"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL KEUNTUNGAN"
+        android:id="@+id/totalkeuntungan"
+        android:textColor="#304BFF"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="260dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/birtu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/birutua"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageView
+        android:id="@+id/birmu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/birumuda"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <TextView
+        android:id="@+id/rupiahkeuntungan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.000.000"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+
+    <TextView
+        android:id="@+id/tanggalkeuntungan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12-Desember-2022"
+        android:textColor="#304BFF"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <ImageView
+        android:layout_width="411dp"
+        android:layout_height="80dp"
+        android:id="@+id/bordersearch"
+        android:background="@drawable/back"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-7dp" />
+
+    <ImageView
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:background="@drawable/menu"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="15dp" />
+
+    <TextView
+        android:id="@+id/magist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAGIST"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/border3"
+        android:layout_width="158dp"
+        android:layout_height="70dp"
+        android:background="@drawable/border_dashboard"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <TextView
+        android:id="@+id/barang_tersisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOCK MENIPIS "
+        android:textColor="#304BFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <TextView
+        android:id="@+id/berikut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berikut Barang Mau Habis"
+        android:textColor="#304BFF"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="396dp" />
+
+    <TextView
+        android:id="@+id/lihat_semua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIHAT SEMUA >"
+        android:textColor="#304BFF"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <TextView
+        android:id="@+id/lilin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LILIN"
+        android:textColor="#304BFF"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <TextView
+        android:id="@+id/tersisa_lilin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15000"
+        android:textColor="#304BFF"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="#304BFF"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dus"
+        android:textColor="#304BFF"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

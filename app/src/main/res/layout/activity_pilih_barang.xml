@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/bordersearch"
+        android:layout_width="411dp"
+        android:layout_height="80dp"
+        android:background="@drawable/back"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <EditText
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:background="@drawable/tombol_back"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="28dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="322dp"
+        android:layout_height="31dp"
+        android:background="@drawable/shape_1"
+        android:drawableLeft="@drawable/search"
+        android:fontFamily="@font/poppins"
+        android:hint="Pencarian"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="15sp"
+        android:paddingTop="6sp"
+        android:textColor="@color/black"
+        android:textColorHint="#304BFF"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/pilih_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="PILIH BARANG"
+        android:textColor="#304BFF"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:id="@+id/kotak"
+        android:layout_width="384dp"
+        android:layout_height="91dp"
+        android:background="@drawable/kotak"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <TextView
+        android:id="@+id/lilin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lilin"
+        android:textColor="#304BFF"
+        android:textSize="27sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <ImageView
+        android:id="@+id/kotak2"
+        android:layout_width="383dp"
+        android:layout_height="88dp"
+        android:background="@drawable/kotak"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <TextView
+        android:id="@+id/minus_sendok"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:background="@drawable/kurang"
+        android:textSize="23dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <TextView
+        android:id="@+id/angka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#304BFF"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <ImageView
+        android:id="@+id/kotak1"
+        android:layout_width="383dp"
+        android:layout_height="88dp"
+        android:background="@drawable/kotak"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp12.500"
+        android:textColor="#304BFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <TextView
+        android:id="@+id/minus_korek"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:background="@drawable/kurang"
+        android:textSize="23dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <TextView
+        android:id="@+id/plus_lilin"
+        android:layout_width="28dp"
+        android:layout_height="32dp"
+        android:background="@drawable/plus"
+        android:textSize="23dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="351dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <ImageView
+        android:id="@+id/kotak3"
+        android:layout_width="383dp"
+        android:layout_height="88dp"
+        android:background="@drawable/kotak"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+    <TextView
+        android:id="@+id/harga_garpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp25.000"
+        android:textColor="#304BFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <TextView
+        android:id="@+id/angka_korek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="#304BFF"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <TextView
+        android:id="@+id/harga_korek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp15.000"
+        android:textColor="#304BFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <TextView
+        android:id="@+id/plus_sendok"
+        android:layout_width="28dp"
+        android:layout_height="32dp"
+        android:background="@drawable/plus"
+        android:textSize="23dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="351dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <TextView
+        android:id="@+id/korek_api"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Korek Api"
+        android:textColor="#304BFF"
+        android:textSize="27sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <TextView
+        android:id="@+id/sendok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sendok"
+        android:textColor="#304BFF"
+        android:textSize="27sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <TextView
+        android:id="@+id/minus_lilin"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:background="@drawable/kurang"
+        android:textSize="23dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/angka_sendok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textColor="#304BFF"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <TextView
+        android:id="@+id/minus_garpu"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:background="@drawable/kurang"
+        android:textSize="23dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <TextView
+        android:id="@+id/harga_sendok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp20.000"
+        android:textColor="#304BFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <TextView
+        android:id="@+id/plus_garpu"
+        android:layout_width="28dp"
+        android:layout_height="32dp"
+        android:background="@drawable/plus"
+        android:textSize="23dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="351dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <TextView
+        android:id="@+id/angka_garpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="#304BFF"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <TextView
+        android:id="@+id/garpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Garpu"
+        android:textColor="#304BFF"
+        android:textSize="27sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <TextView
+        android:id="@+id/plus_korek"
+        android:layout_width="28dp"
+        android:layout_height="32dp"
+        android:background="@drawable/plus"
+        android:textSize="23dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="351dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

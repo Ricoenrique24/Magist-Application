@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deliverytracking.DeliveryKurirActivity"
+    android:background="#F2F2F2">
+
+    <TextView
+        android:layout_width="381dp"
+        android:layout_height="97dp"
+        android:background="@drawable/profile"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="340dp"
+        android:layout_height="32dp"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/search"
+        android:fontFamily="@font/poppins"
+        android:text="Lokasi Dicari"
+        android:textColor="@color/white"
+        android:textColorHint="#0027FF"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="0dp"
+        android:background="@drawable/mengirim1"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <TextView
+        android:id="@+id/diterima"
+        android:layout_width="135dp"
+        android:layout_height="30dp"
+        android:background="@drawable/diterima1"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="427dp"
+        android:background="@drawable/list"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="288dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
