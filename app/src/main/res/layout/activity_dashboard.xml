@@ -8,54 +8,103 @@
     android:orientation="vertical"
     tools:context=".dashboard.DashboardActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="420dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:background="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="@+id/magist"
+        app:layout_constraintEnd_toStartOf="@+id/magist"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/magist"
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="MissingConstraints" />
+
     <TextView
+        android:id="@+id/magist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAGIST"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.414"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RINGKASAN BISNIS"
         android:textColor="#304BFF"
         android:textSize="20sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="81dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="86dp" />
 
     <ImageView
+        android:id="@+id/border1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/border1"
         android:background="@drawable/border_dashboard"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="130dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="130dp" />
 
     <TextView
+        android:id="@+id/totalpenjualan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="TOTAL PENJUALAN"
-        android:id="@+id/totalpenjualan"
         android:textColor="#304BFF"
         android:textSize="15sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="142dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tanggal"
+        app:layout_constraintStart_toStartOf="@+id/border1"
+        app:layout_constraintTop_toTopOf="@+id/tanggal"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/birtu1"
-        android:background="@drawable/birutua"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="173dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/birutua"
+        app:layout_constraintEnd_toStartOf="@+id/birmu1"
+        app:layout_constraintStart_toStartOf="@+id/border1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <ImageView
         android:id="@+id/birmu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/birumuda"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="173dp"
+        app:layout_constraintBottom_toBottomOf="@+id/border1"
+        app:layout_constraintEnd_toEndOf="@+id/border1"
+        app:layout_constraintStart_toEndOf="@+id/birtu1"
+        app:layout_constraintTop_toTopOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.589"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -66,9 +115,11 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="183dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="@+id/birmu1"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/birtu1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="182dp" />
 
     <TextView
         android:id="@+id/tanggal"
@@ -78,38 +129,46 @@
         android:textColor="#304BFF"
         android:textSize="15sp"
         android:textStyle="normal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="144dp" />
+        app:layout_constraintBottom_toTopOf="@+id/birmu1"
+        app:layout_constraintEnd_toEndOf="@+id/border1"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toEndOf="@+id/totalpenjualan"
+        app:layout_constraintTop_toTopOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.521"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/border2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/border_dashboard"
+        app:layout_constraintTop_toBottomOf="@+id/border1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="247dp" />
+        tools:layout_editor_absoluteX="31dp" />
 
     <TextView
+        android:id="@+id/totalkeuntungan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="TOTAL KEUNTUNGAN"
-        android:id="@+id/totalkeuntungan"
         android:textColor="#304BFF"
         android:textSize="15sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="260dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tanggalkeuntungan"
+        app:layout_constraintStart_toStartOf="@+id/border2"
+        app:layout_constraintTop_toTopOf="@+id/tanggalkeuntungan"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/birtu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:background="@drawable/birutua"
+        app:layout_constraintStart_toStartOf="@+id/border2"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
         tools:layout_editor_absoluteY="289dp" />
 
     <ImageView
@@ -117,9 +176,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/birumuda"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="289dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/border2"
+        app:layout_constraintEnd_toEndOf="@+id/border2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/birtu2"
+        app:layout_constraintTop_toBottomOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.575"
+        tools:ignore="MissingConstraints" />
+
 
     <TextView
         android:id="@+id/rupiahkeuntungan"
@@ -129,10 +193,13 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="normal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="298dp" />
-
+        app:layout_constraintBottom_toBottomOf="@+id/birmu2"
+        app:layout_constraintEnd_toEndOf="@+id/birmu2"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toEndOf="@+id/birtu2"
+        app:layout_constraintTop_toTopOf="@+id/birmu2"
+        app:layout_constraintVertical_bias="0.529"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tanggalkeuntungan"
@@ -142,46 +209,12 @@
         android:textColor="#304BFF"
         android:textSize="15sp"
         android:textStyle="normal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="260dp" />
-
-    <ImageView
-        android:layout_width="411dp"
-        android:layout_height="80dp"
-        android:id="@+id/bordersearch"
-        android:background="@drawable/back"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="-7dp" />
-
-    <ImageView
-        android:layout_width="31dp"
-        android:layout_height="28dp"
-        android:background="@drawable/menu"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="15dp" />
-
-    <TextView
-        android:id="@+id/magist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MAGIST"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <ImageView
-        android:id="@+id/border3"
-        android:layout_width="158dp"
-        android:layout_height="70dp"
-        android:background="@drawable/border_dashboard"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="422dp" />
+        app:layout_constraintBottom_toTopOf="@+id/birmu2"
+        app:layout_constraintEnd_toEndOf="@+id/border2"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/totalkeuntungan"
+        app:layout_constraintTop_toBottomOf="@+id/border1"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/barang_tersisa"
@@ -192,7 +225,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="364dp" />
 
     <TextView
@@ -204,8 +237,8 @@
         android:textSize="10sp"
         android:textStyle="normal"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="396dp" />
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="398dp" />
 
     <TextView
         android:id="@+id/lihat_semua"
@@ -216,49 +249,224 @@
         android:textSize="15sp"
         android:textStyle="normal"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteX="290dp"
         tools:layout_editor_absoluteY="378dp" />
+
+    <ImageView
+        android:id="@+id/kotak"
+        android:layout_width="383dp"
+        android:layout_height="88dp"
+        android:background="@drawable/kotak"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="413dp" />
 
     <TextView
         android:id="@+id/lilin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LILIN"
+        android:text="Lilin"
         android:textColor="#304BFF"
-        android:textSize="15sp"
+        android:textSize="25sp"
         android:textStyle="normal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="435dp" />
-
-    <TextView
-        android:id="@+id/tersisa_lilin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="15000"
-        android:textColor="#304BFF"
-        android:textStyle="normal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="455dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/kotak"
+        app:layout_constraintEnd_toEndOf="@+id/kotak"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="@+id/kotak"
+        app:layout_constraintTop_toTopOf="@+id/kotak"
+        app:layout_constraintVertical_bias="0.277"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:text="Rp12.500"
         android:textColor="#304BFF"
-        android:textSize="15sp"
+        android:textSize="18sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="447dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/kotak"
+        app:layout_constraintEnd_toEndOf="@+id/kotak"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/kotak"
+        app:layout_constraintTop_toTopOf="@+id/kotak"
+        app:layout_constraintVertical_bias="0.765"
+        tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dus"
         android:textColor="#304BFF"
-        android:textSize="15sp"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="447dp" />
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak"
+        app:layout_constraintEnd_toEndOf="@+id/kotak"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="@+id/kotak"
+        app:layout_constraintTop_toTopOf="@+id/kotak"
+        app:layout_constraintVertical_bias="0.574" />
+
+    <TextView
+        android:id="@+id/angka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#304BFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak"
+        app:layout_constraintEnd_toEndOf="@+id/kotak"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/kotak"
+        app:layout_constraintTop_toTopOf="@+id/kotak"
+        app:layout_constraintVertical_bias="0.574"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/kotak1"
+        android:layout_width="383dp"
+        android:layout_height="88dp"
+        android:background="@drawable/kotak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotak" />
+
+    <TextView
+        android:id="@+id/korek_api"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Korek Api"
+        android:textColor="#304BFF"
+        android:textSize="27sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak1"
+        app:layout_constraintEnd_toEndOf="@+id/kotak1"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/kotak1"
+        app:layout_constraintTop_toBottomOf="@+id/kotak"
+        app:layout_constraintVertical_bias="0.173"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/harga_korek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp15.000"
+        android:textColor="#304BFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak1"
+        app:layout_constraintEnd_toEndOf="@+id/kotak1"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/kotak1"
+        app:layout_constraintTop_toBottomOf="@+id/kotak"
+        app:layout_constraintVertical_bias="0.703"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/angka_korek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="#304BFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak1"
+        app:layout_constraintEnd_toEndOf="@+id/kotak1"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="@+id/kotak1"
+        app:layout_constraintTop_toBottomOf="@+id/kotak"
+        app:layout_constraintVertical_bias="0.537"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pacs"
+        android:textColor="#304BFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak1"
+        app:layout_constraintEnd_toEndOf="@+id/kotak1"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="@+id/kotak1"
+        app:layout_constraintTop_toBottomOf="@+id/kotak"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <ImageView
+        android:id="@+id/kotak2"
+        android:layout_width="383dp"
+        android:layout_height="88dp"
+        android:background="@drawable/kotak"
+        app:layout_constraintBottom_toTopOf="@+id/kotak3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/sendok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Sendok"
+        android:textColor="#304BFF"
+        android:textSize="27sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
+        app:layout_constraintStart_toStartOf="@+id/kotak2"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1"
+        app:layout_constraintVertical_bias="0.339"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/harga_sendok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Rp20.000"
+        android:textColor="#304BFF"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
+        app:layout_constraintEnd_toEndOf="@+id/kotak2"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/kotak2"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1"
+        app:layout_constraintVertical_bias="0.83"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/angka_sendok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="8"
+        android:textColor="#304BFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/kotak3"
+        app:layout_constraintEnd_toEndOf="@+id/kotak2"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="@+id/kotak2"
+        app:layout_constraintTop_toTopOf="@+id/kotak2"
+        app:layout_constraintVertical_bias="0.537"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/jumlah_barangk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Dus"
+        android:textColor="#304BFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/kotak3"
+        app:layout_constraintEnd_toEndOf="@+id/kotak2"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/kotak2"
+        app:layout_constraintTop_toTopOf="@+id/kotak2"
+        app:layout_constraintVertical_bias="0.537"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
