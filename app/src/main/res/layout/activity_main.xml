@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".Activity.login.LoginActivity">
+    tools:context=".login.LoginActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

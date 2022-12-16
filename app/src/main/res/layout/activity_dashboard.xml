@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#EDEDED"
     android:orientation="vertical"
-    tools:context=".Activity.dashboard.DashboardActivity">
+    tools:context=".dashboard.DashboardActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -266,7 +266,7 @@
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="413dp" />
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/tvJenis_barang1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -276,10 +276,10 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/kotak"
         app:layout_constraintEnd_toEndOf="@+id/kotak"
-        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="@+id/kotak"
         app:layout_constraintTop_toTopOf="@+id/kotak"
-        app:layout_constraintVertical_bias="0.277"
+        app:layout_constraintVertical_bias="0.009"
         tools:ignore="MissingConstraints" />
 
     <TextView
