@@ -11,7 +11,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="420dp"
+        android:layout_width="411dp"
         android:layout_height="74dp"
         android:layout_marginBottom="52dp"
         android:background="@drawable/back"
@@ -408,6 +408,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/total_sekarang"
         android:drawableRight="@drawable/shopping_cart"
         android:text="TOTAL SEKARANG"
         android:textColor="@color/white"

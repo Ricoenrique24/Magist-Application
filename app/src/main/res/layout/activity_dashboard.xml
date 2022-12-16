@@ -10,27 +10,25 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="420dp"
-        android:layout_height="74dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="418dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/back"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/tvRingkasan"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:layout_width="31dp"
         android:layout_height="28dp"
         android:background="@drawable/menu"
-        app:layout_constraintBottom_toBottomOf="@+id/magist"
-        app:layout_constraintEnd_toStartOf="@+id/magist"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMagist"
+        app:layout_constraintEnd_toStartOf="@+id/tvMagist"
         app:layout_constraintHorizontal_bias="0.258"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/magist"
-        app:layout_constraintVertical_bias="0.4"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="@+id/tvMagist" />
 
     <TextView
-        android:id="@+id/magist"
+        android:id="@+id/tvMagist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MAGIST"
@@ -42,58 +40,59 @@
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.414"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.414" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvRingkasan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
         android:text="RINGKASAN BISNIS"
         android:textColor="#304BFF"
         android:textSize="20sp"
         android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/rupiah"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="86dp" />
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/border1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@drawable/border_dashboard"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="130dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tvRingkasan" />
 
     <TextView
         android:id="@+id/totalpenjualan"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="4dp"
         android:text="TOTAL PENJUALAN"
         android:textColor="#304BFF"
         android:textSize="15sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/tanggal"
         app:layout_constraintStart_toStartOf="@+id/border1"
-        app:layout_constraintTop_toTopOf="@+id/tanggal"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="@+id/border1"
+        app:layout_constraintVertical_bias="1.0"/>
 
     <ImageView
         android:id="@+id/birtu1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:background="@drawable/birutua"
-        app:layout_constraintEnd_toStartOf="@+id/birmu1"
+        app:layout_constraintBottom_toBottomOf="@+id/border1"
+        app:layout_constraintEnd_toEndOf="@+id/border1"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="@+id/border1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="173dp" />
+        app:layout_constraintTop_toTopOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.712"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/birmu1"
@@ -102,9 +101,10 @@
         android:background="@drawable/birumuda"
         app:layout_constraintBottom_toBottomOf="@+id/border1"
         app:layout_constraintEnd_toEndOf="@+id/border1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/birtu1"
         app:layout_constraintTop_toTopOf="@+id/border1"
-        app:layout_constraintVertical_bias="0.589"
+        app:layout_constraintVertical_bias="0.712"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -131,10 +131,10 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/birmu1"
         app:layout_constraintEnd_toEndOf="@+id/border1"
-        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintHorizontal_bias="0.841"
         app:layout_constraintStart_toEndOf="@+id/totalpenjualan"
         app:layout_constraintTop_toTopOf="@+id/border1"
-        app:layout_constraintVertical_bias="0.521"
+        app:layout_constraintVertical_bias="0.468"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -146,30 +146,35 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="31dp" />
 
+
     <TextView
         android:id="@+id/totalkeuntungan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="158dp"
+        android:layout_height="24dp"
         android:text="TOTAL KEUNTUNGAN"
         android:textColor="#304BFF"
         android:textSize="15sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/tanggalkeuntungan"
+        app:layout_constraintBottom_toBottomOf="@+id/border2"
+        app:layout_constraintEnd_toEndOf="@+id/border2"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="@+id/border2"
-        app:layout_constraintTop_toTopOf="@+id/tanggalkeuntungan"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.156"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/birtu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:background="@drawable/birutua"
+        app:layout_constraintBottom_toBottomOf="@+id/border2"
+        app:layout_constraintEnd_toEndOf="@+id/border2"
+        app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="@+id/border2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="289dp" />
+        app:layout_constraintTop_toBottomOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.684"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/birmu2"
@@ -181,12 +186,11 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/birtu2"
         app:layout_constraintTop_toBottomOf="@+id/border1"
-        app:layout_constraintVertical_bias="0.575"
+        app:layout_constraintVertical_bias="0.684"
         tools:ignore="MissingConstraints" />
 
-
     <TextView
-        android:id="@+id/rupiahkeuntungan"
+        android:id="@+id/tvRupiahkeuntungan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1.000.000"
@@ -202,7 +206,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/tanggalkeuntungan"
+        android:id="@+id/tvTanggalkeuntungan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12-Desember-2022"
@@ -211,13 +215,14 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/birmu2"
         app:layout_constraintEnd_toEndOf="@+id/border2"
-        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintHorizontal_bias="0.762"
         app:layout_constraintStart_toEndOf="@+id/totalkeuntungan"
         app:layout_constraintTop_toBottomOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.466"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/barang_tersisa"
+        android:id="@+id/tvBarang_tersisa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="STOCK MENIPIS "
@@ -225,11 +230,11 @@
         android:textSize="15sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="364dp" />
 
     <TextView
-        android:id="@+id/berikut"
+        android:id="@+id/tvBerikut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Berikut Barang Mau Habis"
@@ -237,11 +242,11 @@
         android:textSize="10sp"
         android:textStyle="normal"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="384dp" />
 
     <TextView
-        android:id="@+id/lihat_semua"
+        android:id="@+id/tvLihat_semua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LIHAT SEMUA >"
@@ -262,7 +267,7 @@
         tools:layout_editor_absoluteY="413dp" />
 
     <TextView
-        android:id="@+id/lilin"
+        android:id="@+id/tvJenis_barang1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lilin"
@@ -280,6 +285,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/tvHarga1"
         android:text="Rp12.500"
         android:textColor="#304BFF"
         android:textSize="18sp"
@@ -293,7 +299,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvJumlah1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dus"
@@ -307,7 +313,7 @@
         app:layout_constraintVertical_bias="0.574" />
 
     <TextView
-        android:id="@+id/angka"
+        android:id="@+id/tvAngka1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
@@ -332,7 +338,7 @@
         app:layout_constraintTop_toBottomOf="@+id/kotak" />
 
     <TextView
-        android:id="@+id/korek_api"
+        android:id="@+id/tvJenis_barang2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Korek Api"
@@ -348,7 +354,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/harga_korek"
+        android:id="@+id/tvHarga2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rp15.000"
@@ -364,7 +370,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/angka_korek"
+        android:id="@+id/tvAngka2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5"
@@ -379,7 +385,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvJumlah2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pacs"
@@ -397,7 +403,6 @@
         android:layout_width="383dp"
         android:layout_height="88dp"
         android:background="@drawable/kotak"
-        app:layout_constraintBottom_toTopOf="@+id/kotak3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kotak1"
@@ -405,7 +410,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/sendok"
+        android:id="@+id/tvJenis_barang3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -420,7 +425,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/harga_sendok"
+        android:id="@+id/tvHarga3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -437,14 +442,13 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/angka_sendok"
+        android:id="@+id/tvAngka3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="8"
         android:textColor="#304BFF"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/kotak3"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
         app:layout_constraintEnd_toEndOf="@+id/kotak2"
         app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintStart_toStartOf="@+id/kotak2"
@@ -453,14 +457,13 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/jumlah_barangk"
+        android:id="@+id/tvJumlah3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="Dus"
         android:textColor="#304BFF"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/kotak3"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
         app:layout_constraintEnd_toEndOf="@+id/kotak2"
         app:layout_constraintHorizontal_bias="0.932"
         app:layout_constraintStart_toStartOf="@+id/kotak2"
