@@ -1,13 +1,6 @@
-package com.example.projectakhir.main;
+package com.example.projectakhir.Activity.main;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-
-import android.os.Bundle;
-import android.view.View;
-
-import com.example.projectakhir.R;
 
 public class MainActivity extends AppCompatActivity {
 

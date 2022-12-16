@@ -7,7 +7,7 @@
     android:background="@drawable/background_dashboard"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".login.LoginActivity">
+    tools:context=".Activity.login.LoginActivity">
 
 
     <TextView
