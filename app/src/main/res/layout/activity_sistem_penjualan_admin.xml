@@ -22,14 +22,14 @@
         android:layout_width="31dp"
         android:layout_height="28dp"
         android:background="@drawable/menu"
-        app:layout_constraintBottom_toBottomOf="@+id/magist"
-        app:layout_constraintEnd_toStartOf="@+id/magist"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMagist"
+        app:layout_constraintEnd_toStartOf="@+id/tvMagist"
         app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/magist" />
+        app:layout_constraintTop_toTopOf="@+id/tvMagist" />
 
     <TextView
-        android:id="@+id/magist"
+        android:id="@+id/tvMagist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MAGIST"
@@ -53,6 +53,7 @@
 
         <TextView
             android:layout_width="wrap_content"
+            android:id="@+id/tvNama_Pembeli"
             android:layout_height="wrap_content"
             android:layout_marginLeft="3sp"
             android:text="NAMA PEMBELI"
@@ -63,7 +64,7 @@
             tools:layout_editor_absoluteY="121dp" />
 
         <EditText
-            android:id="@+id/nama_pembeli"
+            android:id="@+id/etNama_pembeli"
             android:layout_width="370dp"
             android:layout_height="29dp"
             android:layout_marginBottom="5sp"
@@ -83,9 +84,10 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/search"
+        android:id="@+id/tvSearch"
         android:layout_width="322dp"
         android:layout_height="31dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/shape"
         android:drawableLeft="@drawable/search_1"
         android:fontFamily="@font/poppins"
@@ -98,13 +100,13 @@
         android:textColorHint="#FFFFFF"
         android:textSize="15sp"
         android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/pilihan_barang"
+        android:id="@+id/tvPilihan_Barang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PILIHAN BARANG"
@@ -122,15 +124,15 @@
         android:id="@+id/kotak"
         android:layout_width="383dp"
         android:layout_height="88dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/kotak"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintHorizontal_bias="0.642"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
     <TextView
-        android:id="@+id/lilin"
+        android:id="@+id/tvJenis_barang1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lilin"
@@ -147,6 +149,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/tvHarga1"
         android:text="Rp12.500"
         android:textColor="#304BFF"
         android:textSize="18sp"
@@ -159,7 +162,7 @@
         app:layout_constraintVertical_bias="0.765" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvJumlah1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dus"
@@ -173,7 +176,7 @@
         app:layout_constraintVertical_bias="0.574" />
 
     <TextView
-        android:id="@+id/angka"
+        android:id="@+id/tvAngka1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
@@ -198,7 +201,7 @@
         app:layout_constraintTop_toBottomOf="@+id/kotak" />
 
     <TextView
-        android:id="@+id/korek_api"
+        android:id="@+id/tvJenis_barang2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Korek Api"
@@ -209,11 +212,11 @@
         app:layout_constraintEnd_toEndOf="@+id/kotak1"
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="@+id/kotak1"
-        app:layout_constraintTop_toBottomOf="@+id/kotak"
+        app:layout_constraintTop_toTopOf="@+id/kotak1"
         app:layout_constraintVertical_bias="0.173" />
 
     <TextView
-        android:id="@+id/harga_korek"
+        android:id="@+id/tvHarga2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rp15.000"
@@ -224,11 +227,11 @@
         app:layout_constraintEnd_toEndOf="@+id/kotak1"
         app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="@+id/kotak1"
-        app:layout_constraintTop_toBottomOf="@+id/kotak"
-        app:layout_constraintVertical_bias="0.703"/>
+        app:layout_constraintTop_toTopOf="@+id/kotak1"
+        app:layout_constraintVertical_bias="0.703" />
 
     <TextView
-        android:id="@+id/angka_korek"
+        android:id="@+id/tvAngka2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5"
@@ -238,11 +241,11 @@
         app:layout_constraintEnd_toEndOf="@+id/kotak1"
         app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintStart_toStartOf="@+id/kotak1"
-        app:layout_constraintTop_toBottomOf="@+id/kotak"
+        app:layout_constraintTop_toTopOf="@+id/kotak1"
         app:layout_constraintVertical_bias="0.537" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tvJumlah2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pacs"
@@ -252,23 +255,22 @@
         app:layout_constraintEnd_toEndOf="@+id/kotak1"
         app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="@+id/kotak1"
-        app:layout_constraintTop_toBottomOf="@+id/kotak"
+        app:layout_constraintTop_toTopOf="@+id/kotak1"
         app:layout_constraintVertical_bias="0.537" />
 
     <ImageView
         android:id="@+id/kotak2"
         android:layout_width="383dp"
         android:layout_height="88dp"
+        android:layout_marginTop="88dp"
         android:background="@drawable/kotak"
-        app:layout_constraintBottom_toTopOf="@+id/kotak3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.642"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kotak1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/kotak" />
 
     <TextView
-        android:id="@+id/sendok"
+        android:id="@+id/tvJenis_barang3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -282,7 +284,7 @@
         app:layout_constraintVertical_bias="0.339" />
 
     <TextView
-        android:id="@+id/harga_sendok"
+        android:id="@+id/tvHarga3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -298,13 +300,13 @@
         app:layout_constraintVertical_bias="0.83" />
 
     <TextView
-        android:id="@+id/angka_sendok"
+        android:id="@+id/tvAngka3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="8"
         android:textColor="#304BFF"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/kotak3"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
         app:layout_constraintEnd_toEndOf="@+id/kotak2"
         app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toStartOf="@+id/kotak2"
@@ -312,13 +314,13 @@
         app:layout_constraintVertical_bias="0.537" />
 
     <TextView
-        android:id="@+id/jumlah_barangk"
+        android:id="@+id/tvJumlah3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dus"
         android:textColor="#304BFF"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/kotak3"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
         app:layout_constraintEnd_toEndOf="@+id/kotak2"
         app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="@+id/kotak2"
@@ -326,7 +328,7 @@
         app:layout_constraintVertical_bias="0.537" />
 
     <ImageView
-        android:id="@+id/kotak3"
+        android:id="@+id/ivKotak3"
         android:layout_width="383dp"
         android:layout_height="88dp"
         android:layout_marginTop="88dp"
@@ -337,73 +339,72 @@
         app:layout_constraintTop_toBottomOf="@+id/kotak1" />
 
     <TextView
-        android:id="@+id/garpu"
+        android:id="@+id/tvJenis_barang4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Garpu"
         android:textColor="#304BFF"
         android:textSize="27sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak3"
-        app:layout_constraintEnd_toEndOf="@+id/kotak3"
+        app:layout_constraintBottom_toBottomOf="@+id/ivKotak3"
+        app:layout_constraintEnd_toEndOf="@+id/ivKotak3"
         app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="@+id/kotak3"
-        app:layout_constraintTop_toTopOf="@+id/kotak3"
+        app:layout_constraintStart_toStartOf="@+id/ivKotak3"
+        app:layout_constraintTop_toTopOf="@+id/ivKotak3"
         app:layout_constraintVertical_bias="0.25" />
 
     <TextView
-        android:id="@+id/harga_garpu"
+        android:id="@+id/tvHarga4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rp25.000"
         android:textColor="#304BFF"
         android:textSize="18sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak3"
-        app:layout_constraintEnd_toEndOf="@+id/kotak3"
+        app:layout_constraintBottom_toBottomOf="@+id/ivKotak3"
+        app:layout_constraintEnd_toEndOf="@+id/ivKotak3"
         app:layout_constraintHorizontal_bias="0.042"
-        app:layout_constraintStart_toStartOf="@+id/kotak3"
-        app:layout_constraintTop_toBottomOf="@+id/kotak2"
+        app:layout_constraintStart_toStartOf="@+id/ivKotak3"
+        app:layout_constraintTop_toTopOf="@+id/ivKotak3"
         app:layout_constraintVertical_bias="0.765" />
 
     <TextView
-        android:id="@+id/angka_garpu"
+        android:id="@+id/tvAngka4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10"
         android:textColor="#304BFF"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak3"
-        app:layout_constraintEnd_toEndOf="@+id/kotak3"
+        app:layout_constraintBottom_toBottomOf="@+id/ivKotak3"
+        app:layout_constraintEnd_toEndOf="@+id/ivKotak3"
         app:layout_constraintHorizontal_bias="0.746"
-        app:layout_constraintStart_toStartOf="@+id/kotak3"
-        app:layout_constraintTop_toTopOf="@+id/kotak3"
+        app:layout_constraintStart_toStartOf="@+id/ivKotak3"
+        app:layout_constraintTop_toTopOf="@+id/ivKotak3"
         app:layout_constraintVertical_bias="0.629" />
 
     <TextView
-        android:id="@+id/jumlah_garpu"
+        android:id="@+id/tvJumlah4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dus"
         android:textColor="#304BFF"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak3"
-        app:layout_constraintEnd_toEndOf="@+id/kotak3"
+        app:layout_constraintBottom_toBottomOf="@+id/ivKotak3"
+        app:layout_constraintEnd_toEndOf="@+id/ivKotak3"
         app:layout_constraintHorizontal_bias="0.932"
-        app:layout_constraintStart_toStartOf="@+id/kotak3"
-        app:layout_constraintTop_toBottomOf="@+id/kotak2"
+        app:layout_constraintStart_toStartOf="@+id/ivKotak3"
+        app:layout_constraintTop_toTopOf="@+id/ivKotak3"
         app:layout_constraintVertical_bias="0.634" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <ImageView
+        android:id="@+id/ivTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/total"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kotak3" />
+        app:layout_constraintTop_toBottomOf="@+id/ivKotak3" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -413,9 +414,9 @@
         android:text="TOTAL SEKARANG"
         android:textColor="@color/white"
         android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
+        app:layout_constraintBottom_toBottomOf="@+id/ivTotal"
+        app:layout_constraintEnd_toEndOf="@+id/ivTotal"
+        app:layout_constraintStart_toStartOf="@+id/ivTotal"
+        app:layout_constraintTop_toTopOf="@+id/ivTotal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
