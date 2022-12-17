@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         btnPilihBarang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"Error! Under Maintance", Toast.LENGTH_SHORT).show();
-//                startActivity(new Intent(MainActivity.this, PilihBarangActivity.class));
+//                Toast.makeText(MainActivity.this,"Error! Under Maintance", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, PilihBarangActivity.class));
             }
         });
 

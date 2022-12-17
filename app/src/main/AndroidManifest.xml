@@ -17,6 +17,9 @@
             android:name=".Activity.sistempenjualan.SistemPenjualanAdminActivity"
             android:exported="false" />
         <activity
+            android:name=".Activity.sistempenjualan.PilihBarangActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.main.SplasActivity"
             android:exported="false" />
         <activity
