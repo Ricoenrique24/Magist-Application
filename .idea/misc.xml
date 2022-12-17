@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/activity_dashboard.xml" value="0.2" />
+        <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/activity_dashboard_test.xml" value="0.264" />
         <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/activity_pilih_barang.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/activity_sistem_penjualan_admin.xml" value="0.25" />
         <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/activity_test_features.xml" value="0.4" />
         <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/akuuu.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/item_list_dashboard.xml" value="0.4" />
         <entry key="..\:/Users/Rizqi Azizissani/ProjectAkhir/app/src/main/res/drawable/home.xml" value="0.279" />
         <entry key="..\:/Users/Rizqi Azizissani/ProjectAkhir/app/src/main/res/drawable/icon.xml" value="0.2275" />
         <entry key="..\:/Users/Rizqi Azizissani/ProjectAkhir/app/src/main/res/drawable/notifications.xml" value="0.249" />

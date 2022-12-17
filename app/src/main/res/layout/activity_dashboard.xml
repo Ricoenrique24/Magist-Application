@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDEDED"
+    android:background="#CAC9C9"
     android:orientation="vertical"
-    tools:context=".dashboard.DashboardActivity">
+    tools:context=".Activity.dashboard.DashboardActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -71,8 +71,8 @@
 
     <TextView
         android:id="@+id/totalpenjualan"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="TOTAL PENJUALAN"
         android:textColor="#304BFF"
@@ -81,7 +81,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/tanggal"
         app:layout_constraintStart_toStartOf="@+id/border1"
         app:layout_constraintTop_toTopOf="@+id/border1"
-        app:layout_constraintVertical_bias="1.0"/>
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/birtu1"
@@ -268,26 +268,10 @@
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="413dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/tvJenis_barang1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lilin"
-        android:textColor="#304BFF"
-        android:textSize="25sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak"
-        app:layout_constraintEnd_toEndOf="@+id/kotak"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="@+id/kotak"
-        app:layout_constraintTop_toTopOf="@+id/kotak"
-        app:layout_constraintVertical_bias="0.009"
-        tools:ignore="MissingConstraints" />
-
     <TextView
+        android:id="@+id/tvHarga1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvHarga1"
         android:text="Rp12.500"
         android:textColor="#304BFF"
         android:textSize="18sp"
