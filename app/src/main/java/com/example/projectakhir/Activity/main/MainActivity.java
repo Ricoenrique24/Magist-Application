@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.projectakhir.Activity.Konfirmasi;
 import com.example.projectakhir.Activity.dashboard.DashboardActivity;
 import com.example.projectakhir.Activity.login.LoginActivity;
 import com.example.projectakhir.Activity.sistempenjualan.PilihBarangActivity;
@@ -15,7 +16,7 @@ import com.example.projectakhir.Activity.sistempenjualan.SistemPenjualanAdminAct
 import com.example.projectakhir.R;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnDashboard, btnLogin, btnPilihBarang, btnSistemPenjualan, btnSplash;
+    Button btnDashboard, btnLogin, btnPilihBarang, btnSistemPenjualan, btnSplash, btnKonfirmasi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +24,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_test_features);
 
         btnDashboard        = findViewById(R.id.btnDashboard);
-        btnLogin            = findViewById(R.id.btnLogin);
+        btnLogin            = findViewById(R.id.btnLoginTest);
         btnPilihBarang      = findViewById(R.id.btnPilihBarang);
         btnSistemPenjualan  = findViewById(R.id.btnSistemPenjualan);
         btnSplash           = findViewById(R.id.btnSplash);
+        btnKonfirmasi       = findViewById(R.id.btnKonfirmasi);
 
         // Mengaktifkan OnClickListener
         btnDashboard.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, SplasActivity.class));
                 Toast.makeText(MainActivity.this,"Kosong Mas!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnKonfirmasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Konfirmasi.class));
             }
         });
     }

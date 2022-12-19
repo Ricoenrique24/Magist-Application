@@ -16,38 +16,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="29dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/tombol_back"
-        app:layout_constraintEnd_toStartOf="@+id/tvSearch"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvSearch"
-        android:layout_width="322dp"
-        android:layout_height="31dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/shape_1"
-        android:drawableLeft="@drawable/search"
-        android:fontFamily="@font/poppins"
-        android:hint="Pencarian"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:paddingLeft="15sp"
-        android:paddingTop="6sp"
-        android:textColor="@color/black"
-        android:textColorHint="#304BFF"
-        android:textSize="15sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/ivBordersearch"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageButton
+        android:id="@+id/ibPilBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/ivBordersearch"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653" />
+        app:srcCompat="@drawable/tombol_back" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibPilBarang"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/search"
+            android:drawablePadding="8dp"
+            android:hint="Cari Barang Disini!" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tvPilih_barang"
@@ -58,335 +54,27 @@
         android:textColor="#304BFF"
         android:textSize="15sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@+id/ivKotak"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivBordersearch"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/ivKotak"
-        android:layout_width="386dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/kotak"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.382"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivBordersearch" />
-    
-    <TextView
-        android:id="@+id/lilin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lilin"
-        android:textColor="#304BFF"
-        android:textSize="27sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/ivKotak"
-        app:layout_constraintEnd_toEndOf="@+id/ivKotak"
-        app:layout_constraintHorizontal_bias="0.042"
-        app:layout_constraintStart_toStartOf="@+id/ivKotak"
-        app:layout_constraintTop_toTopOf="@+id/ivKotak"
-        app:layout_constraintVertical_bias="0.134" />
 
-    <TextView
-        android:id="@+id/tvHarga1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rp12.500"
-        android:textColor="#304BFF"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/ivKotak"
-        app:layout_constraintEnd_toEndOf="@+id/ivKotak"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="@+id/ivKotak"
-        app:layout_constraintTop_toTopOf="@+id/ivKotak"
-        app:layout_constraintVertical_bias="0.671"/>
-
-    <TextView
-        android:id="@+id/tvMinus1"
-        android:layout_width="33dp"
-        android:layout_height="32dp"
-        android:background="@drawable/kurang"
-        android:textSize="23dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivKotak"
-        app:layout_constraintEnd_toEndOf="@+id/ivKotak"
-        app:layout_constraintHorizontal_bias="0.72"
-        app:layout_constraintStart_toStartOf="@+id/ivKotak"
-        app:layout_constraintTop_toTopOf="@+id/ivKotak"
-        app:layout_constraintVertical_bias="0.542"/>
-
-    <TextView
-        android:id="@+id/tvAngka1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:textColor="#304BFF"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivKotak"
-        app:layout_constraintEnd_toEndOf="@+id/ivKotak"
-        app:layout_constraintHorizontal_bias="0.814"
-        app:layout_constraintStart_toStartOf="@+id/ivKotak"
-        app:layout_constraintTop_toTopOf="@+id/ivKotak"
-        app:layout_constraintVertical_bias="0.553" />
-
-    <TextView
-        android:id="@+id/tvPlus1"
-        android:layout_width="29dp"
-        android:layout_height="29dp"
-        android:background="@drawable/plus"
-        android:textSize="23dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivKotak"
-        app:layout_constraintEnd_toEndOf="@+id/ivKotak"
-        app:layout_constraintHorizontal_bias="0.957"
-        app:layout_constraintStart_toStartOf="@+id/ivKotak"
-        app:layout_constraintTop_toTopOf="@+id/ivKotak"
-        app:layout_constraintVertical_bias="0.508" />
-
-    <ImageView
-        android:id="@+id/imKotak1"
-        android:layout_width="383dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/kotak"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivKotak"/>
-
-    <TextView
-        android:id="@+id/korek_api"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Korek Api"
-        android:textColor="#304BFF"
-        android:textSize="27sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/imKotak1"
-        app:layout_constraintEnd_toEndOf="@+id/imKotak1"
-        app:layout_constraintHorizontal_bias="0.063"
-        app:layout_constraintStart_toStartOf="@+id/imKotak1"
-        app:layout_constraintTop_toTopOf="@+id/imKotak1"
-        app:layout_constraintVertical_bias="0.115" />
-
-    <TextView
-        android:id="@+id/harga_korek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rp15.000"
-        android:textColor="#304BFF"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/imKotak1"
-        app:layout_constraintEnd_toEndOf="@+id/imKotak1"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="@+id/imKotak1"
-        app:layout_constraintTop_toTopOf="@+id/imKotak1"
-        app:layout_constraintVertical_bias="0.656" />
-
-    <TextView
-        android:id="@+id/minus_korek"
-        android:layout_width="33dp"
-        android:layout_height="32dp"
-        android:background="@drawable/kurang"
-        android:textSize="23dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imKotak1"
-        app:layout_constraintEnd_toEndOf="@+id/imKotak1"
-        app:layout_constraintHorizontal_bias="0.72"
-        app:layout_constraintStart_toStartOf="@+id/imKotak1"
-        app:layout_constraintTop_toTopOf="@+id/imKotak1"
-        app:layout_constraintVertical_bias="0.428" />
-
-    <TextView
-        android:id="@+id/angka_korek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="5"
-        android:textColor="#304BFF"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imKotak1"
-        app:layout_constraintEnd_toEndOf="@+id/imKotak1"
-        app:layout_constraintHorizontal_bias="0.831"
-        app:layout_constraintStart_toStartOf="@+id/imKotak1"
-        app:layout_constraintTop_toTopOf="@+id/imKotak1"
-        app:layout_constraintVertical_bias="0.444" />
-
-    <TextView
-        android:id="@+id/plus_korek"
-        android:layout_width="28dp"
-        android:layout_height="32dp"
-        android:background="@drawable/plus"
-        android:textSize="23dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imKotak1"
-        app:layout_constraintEnd_toEndOf="@+id/imKotak1"
-        app:layout_constraintHorizontal_bias="0.957"
-        app:layout_constraintStart_toStartOf="@+id/imKotak1"
-        app:layout_constraintTop_toTopOf="@+id/imKotak1"
-        app:layout_constraintVertical_bias="0.464" />
-
-    <ImageView
-        android:id="@+id/kotak2"
-        android:layout_width="383dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="92dp"
-        android:background="@drawable/kotak"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivKotak" />
-
-    <TextView
-        android:id="@+id/sendok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sendok"
-        android:textColor="#304BFF"
-        android:textSize="27sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
-        app:layout_constraintEnd_toEndOf="@+id/kotak2"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="@+id/kotak2"
-        app:layout_constraintTop_toTopOf="@+id/kotak2"
-        app:layout_constraintVertical_bias="0.134"/>
-
-    <TextView
-        android:id="@+id/harga_sendok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rp20.000"
-        android:textColor="#304BFF"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
-        app:layout_constraintEnd_toEndOf="@+id/kotak2"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="@+id/kotak2"
-        app:layout_constraintTop_toTopOf="@+id/kotak2"
-        app:layout_constraintVertical_bias="0.671"/>
-
-    <TextView
-        android:id="@+id/minus_sendok"
-        android:layout_width="33dp"
-        android:layout_height="32dp"
-        android:background="@drawable/kurang"
-        android:textSize="23dp"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
-        app:layout_constraintEnd_toEndOf="@+id/kotak2"
-        app:layout_constraintHorizontal_bias="0.72"
-        app:layout_constraintStart_toStartOf="@+id/kotak2"
-        app:layout_constraintTop_toTopOf="@+id/kotak2"
-        app:layout_constraintVertical_bias="0.482" />
-
-    <TextView
-        android:id="@+id/angka_sendok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="8"
-        android:textColor="#304BFF"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
-        app:layout_constraintEnd_toEndOf="@+id/kotak2"
-        app:layout_constraintHorizontal_bias="0.813"
-        app:layout_constraintStart_toStartOf="@+id/kotak2"
-        app:layout_constraintTop_toTopOf="@+id/kotak2"/>
-
-    <TextView
-        android:id="@+id/plus_sendok"
-        android:layout_width="28dp"
-        android:layout_height="32dp"
-        android:background="@drawable/plus"
-        android:textSize="23dp"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak2"
-        app:layout_constraintEnd_toEndOf="@+id/kotak2"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="@+id/kotak2"
-        app:layout_constraintTop_toTopOf="@+id/kotak2"
-        app:layout_constraintVertical_bias="0.482"/>
-
-    <ImageView
-        android:id="@+id/kotak3"
-        android:layout_width="383dp"
-        android:layout_height="88dp"
-        android:background="@drawable/kotak"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kotak2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPilih_barang">
 
-    <TextView
-        android:id="@+id/harga_garpu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rp25.000"
-        android:textColor="#304BFF"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak3"
-        app:layout_constraintEnd_toEndOf="@+id/kotak3"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="@+id/kotak3"
-        app:layout_constraintTop_toTopOf="@+id/kotak3"
-        app:layout_constraintVertical_bias="0.671" />
-
-    <TextView
-        android:id="@+id/minus_garpu"
-        android:layout_width="33dp"
-        android:layout_height="32dp"
-        android:background="@drawable/kurang"
-        android:textSize="23dp"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak3"
-        app:layout_constraintEnd_toEndOf="@+id/kotak3"
-        app:layout_constraintHorizontal_bias="0.72"
-        app:layout_constraintStart_toStartOf="@+id/kotak3"
-        app:layout_constraintTop_toTopOf="@+id/kotak3"
-        app:layout_constraintVertical_bias="0.428" />
-
-    <TextView
-        android:id="@+id/plus_garpu"
-        android:layout_width="28dp"
-        android:layout_height="32dp"
-        android:background="@drawable/plus"
-        android:textSize="23dp"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak3"
-        app:layout_constraintEnd_toEndOf="@+id/kotak3"
-        app:layout_constraintHorizontal_bias="0.949"
-        app:layout_constraintStart_toStartOf="@+id/kotak3"
-        app:layout_constraintTop_toTopOf="@+id/kotak3"
-        app:layout_constraintVertical_bias="0.428" />
-
-    <TextView
-        android:id="@+id/angka_garpu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10"
-        android:textColor="#304BFF"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak3"
-        app:layout_constraintEnd_toEndOf="@+id/kotak3"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="@+id/kotak3"
-        app:layout_constraintTop_toTopOf="@+id/kotak3"
-        app:layout_constraintVertical_bias="0.444"/>
-
-    <TextView
-        android:id="@+id/garpu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Garpu"
-        android:textColor="#304BFF"
-        android:textSize="27sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/kotak3"
-        app:layout_constraintEnd_toEndOf="@+id/kotak3"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="@+id/kotak3"
-        app:layout_constraintTop_toTopOf="@+id/kotak3"
-        app:layout_constraintVertical_bias="0.134" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_list_cari" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

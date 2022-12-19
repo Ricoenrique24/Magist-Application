@@ -18,7 +18,7 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="385dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -35,7 +35,7 @@
             android:text="Dashboard" />
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnLoginTest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -61,6 +61,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="Splash" />
+
+        <Button
+            android:id="@+id/btnKonfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="konfirmasi" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
