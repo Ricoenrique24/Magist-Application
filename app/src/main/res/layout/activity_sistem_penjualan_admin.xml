@@ -11,21 +11,33 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="411dp"
-        android:layout_height="74dp"
+        android:layout_width="413dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/back"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:layout_width="31dp"
-        android:layout_height="28dp"
+        android:id="@+id/ivSearch"
+        android:layout_width="32dp"
+        android:layout_height="25dp"
+        android:background="@drawable/search_1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toEndOf="@+id/tvMagist"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.54" />
+
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="29dp"
         android:background="@drawable/menu"
         app:layout_constraintBottom_toBottomOf="@+id/tvMagist"
         app:layout_constraintEnd_toStartOf="@+id/tvMagist"
-        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintHorizontal_bias="0.276"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/tvMagist"
         app:layout_constraintVertical_bias="0.0" />
@@ -34,28 +46,30 @@
         android:id="@+id/tvMagist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MAGIST"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="MAGIST By TreeAce"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="20sp"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintVertical_bias="0.476" />
 
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/tvNama_Pembeli"
@@ -91,50 +105,26 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tvSearch"
-        android:layout_width="322dp"
-        android:layout_height="31dp"
-        android:background="@drawable/shape"
-        android:drawableLeft="@drawable/search_1"
-        android:fontFamily="@font/poppins"
-        android:hint="Pilih Barang"
-        android:inputType="text"
-        android:minHeight="25dp"
-        android:paddingLeft="15sp"
-        android:paddingTop="6sp"
-        android:textColor="@color/black"
-        android:textColorHint="#FFFFFF"
-        android:textSize="15sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@+id/ivKotak"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.382"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.425"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
         android:id="@+id/tvPilihan_Barang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="PILIHAN BARANG"
         android:textColor="#304BFF"
         android:textSize="15sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@+id/kotak"
+        app:layout_constraintBottom_toTopOf="@+id/ivKotak"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/ivKotak"
         android:layout_width="383dp"
         android:layout_height="88dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/kotak"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.642"
@@ -428,5 +418,7 @@
         app:layout_constraintEnd_toEndOf="@+id/ivTotal"
         app:layout_constraintStart_toStartOf="@+id/ivTotal"
         app:layout_constraintTop_toTopOf="@+id/ivTotal" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
