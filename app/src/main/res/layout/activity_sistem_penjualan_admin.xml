@@ -419,6 +419,4 @@
         app:layout_constraintStart_toStartOf="@+id/ivTotal"
         app:layout_constraintTop_toTopOf="@+id/ivTotal" />
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

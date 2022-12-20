@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.projectakhir.Activity.Konfirmasi;
+import com.example.projectakhir.Activity.sistempenjualan.Konfirmasi;
 import com.example.projectakhir.Activity.dashboard.DashboardActivity;
 import com.example.projectakhir.Activity.login.LoginActivity;
 import com.example.projectakhir.Activity.sistempenjualan.PilihBarangActivity;

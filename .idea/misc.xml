@@ -14,10 +14,24 @@
         <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/item_list_cari.xml" value="0.25" />
         <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/item_list_dashboard.xml" value="0.4" />
         <entry key="..\:/Users/Enrique/Documents/Application/Github/Magist-Application/app/src/main/res/layout/item_list_kasir.xml" value="0.25" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.197" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/drawable/background_dashboard.xml" value="0.197" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/drawable/border_dashboard.xml" value="0.197" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/drawable/ic_lock.xml" value="0.197" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/drawable/ic_person.xml" value="0.197" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/drawable/logout_abu.xml" value="0.135" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/drawable/menu.xml" value="0.197" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/drawable/navigation_drawer.xml" value="0.197" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/drawable/person_abu.xml" value="0.197" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/drawable/shop_abu.xml" value="0.2135" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/layout/activity_androiddrawer.xml" value="0.1" />
         <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/layout/activity_dashboard.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/layout/activity_dashboard_test.xml" value="0.4" />
-        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/layout/activity_pilih_barang.xml" value="1.2" />
-        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/layout/activity_sistem_penjualan_admin.xml" value="0.176" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/layout/activity_delivery_admin.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/layout/activity_konfirmasi.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/layout/activity_pilih_barang.xml" value="0.4" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/layout/activity_sistem_penjualan_admin.xml" value="0.136" />
+        <entry key="..\:/Users/Rizqi Azizissani/Documents/GitHub/Magist-Application/app/src/main/res/layout/activity_test_features.xml" value="0.15760869565217392" />
         <entry key="..\:/Users/Rizqi Azizissani/ProjectAkhir/app/src/main/res/drawable/home.xml" value="0.279" />
         <entry key="..\:/Users/Rizqi Azizissani/ProjectAkhir/app/src/main/res/drawable/icon.xml" value="0.2275" />
         <entry key="..\:/Users/Rizqi Azizissani/ProjectAkhir/app/src/main/res/drawable/notifications.xml" value="0.249" />

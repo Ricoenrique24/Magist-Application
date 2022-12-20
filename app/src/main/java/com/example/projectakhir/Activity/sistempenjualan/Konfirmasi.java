@@ -1,4 +1,4 @@
-package com.example.projectakhir.Activity;
+package com.example.projectakhir.Activity.sistempenjualan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
