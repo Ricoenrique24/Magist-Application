@@ -17,6 +17,7 @@
             android:id="@+id/tfNamaPembeli"
             android:layout_width="383dp"
             android:layout_height="66dp"
+            android:textColorHint="#304BFF"
             app:hintTextColor="#304BFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
