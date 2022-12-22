@@ -20,22 +20,25 @@
             android:paddingRight="10dp"
 
             android:orientation="vertical">
+
             <TextView
+                android:id="@+id/tvNamaProduk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Nama Produk"
-                android:textStyle="bold"
-                android:textSize="20sp">
-            </TextView>
+                android:textColor="#304BFF"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="100.000"
-                android:textStyle="bold"
                 android:layout_marginBottom="10dp"
-                android:textSize="20sp">
-            </TextView>
+                android:text="100.000"
+                android:textColor="#304BFF"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
 
         </LinearLayout>
         <LinearLayout
@@ -43,22 +46,24 @@
             android:layout_height="match_parent"
             android:gravity="right"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
                 android:text="10"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:gravity="center">
-            </TextView>
+                android:textColor="#304BFF"></TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="DUS"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:gravity="center">
-            </TextView>
+                android:gravity="center"
+                android:text="DUS"
+                android:textColor="#304BFF"></TextView>
         </LinearLayout>
     </LinearLayout>
 

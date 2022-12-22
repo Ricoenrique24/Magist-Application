@@ -23,19 +23,23 @@
         android:paddingRight="20dp">
 
         <TextView
+            android:id="@+id/tvLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="LOGIN"
+            android:textColor="#304BFF"
             android:textSize="25dp"
             android:textStyle="bold"></TextView>
 
         <TextView
+            android:id="@+id/tvMasukkan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:text="Masukan Email dan Password Untuk Login"
+            android:textColor="#304BFF"
             android:textSize="15dp"></TextView>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -57,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/black" />
+                android:textColor="#304BFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -79,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:inputType="textPassword"
-                android:textColor="@color/black" />
+                android:textColor="#304BFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

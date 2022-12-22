@@ -74,6 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="RINGKASAN BISNIS"
+            android:textColor="#304BFF"
             android:textStyle="bold" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -97,6 +98,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="Total Penjualan"
+                android:textColor="#304BFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -107,6 +109,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:text="17 Desember 2022"
+                android:textColor="#304BFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -176,6 +179,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="Total Keuntungan"
+                android:textColor="#304BFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -186,6 +190,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:text="17 Desember 2022"
+                android:textColor="#304BFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -244,6 +249,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="STOK MENIPIS"
+                android:textColor="#304BFF"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -258,6 +264,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Berikut barang dengan stok terendah: "
+                    android:textColor="#304BFF"
                     android:textSize="10sp" />
 
                 <TextView
@@ -268,6 +275,7 @@
                     android:layout_weight="1"
                     android:gravity="right"
                     android:text="LIHAT SEMUA>"
+                    android:textColor="#304BFF"
                     android:textSize="15sp" />
             </LinearLayout>
         </LinearLayout>

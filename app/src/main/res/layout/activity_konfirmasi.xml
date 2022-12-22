@@ -9,9 +9,11 @@
     android:gravity="center">
 
     <TextView
+        android:id="@+id/tvKonfirmasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="KONFIRMASI"
+        android:textColor="#304BFF"
         android:textSize="24sp"
         android:textStyle="bold"></TextView>
 
@@ -26,23 +28,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama Pembeli : ">
-        </TextView>
+            android:text="Nama Pembeli : "
+            android:textColor="#304BFF"></TextView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ENRIQUE">
-        </TextView>
+            android:text="ENRIQUE"
+            android:textColor="#304BFF"></TextView>
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PILIHAN BARANG : "
-        android:paddingLeft="8dp"
         android:layout_marginBottom="10dp"
-        android:textStyle="bold">
-    </TextView>
+        android:paddingLeft="8dp"
+        android:text="PILIHAN BARANG : "
+        android:textColor="#304BFF"
+        android:textStyle="bold"></TextView>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -71,21 +74,23 @@
             android:layout_marginBottom="10dp"
             android:orientation="horizontal"
             android:gravity="center">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
                 android:text="Total Harga : "
-                android:textStyle="bold"
+                android:textColor="#304BFF"
                 android:textSize="20sp"
-                android:layout_marginRight="10dp">
-            </TextView>
+                android:textStyle="bold"></TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="100.000"
+                android:textColor="#304BFF"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="100.000">
-            </TextView>
+                android:textStyle="bold"></TextView>
 
         </LinearLayout>
 
@@ -107,7 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/black"
+                android:textColor="#304BFF"
                 tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 

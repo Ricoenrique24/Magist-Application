@@ -1,6 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-115dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfNamaPembeli"
+            android:layout_width="383dp"
+            android:layout_height="66dp"
+            app:hintTextColor="#304BFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.129">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiNamaPembeli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Pembeli"
+                android:textColor="#304BFF"
+                android:textColorHint="#304BFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivKasir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="660dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvMagist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="MAGIST by TreeAce"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ivKasir"
+            app:layout_constraintEnd_toEndOf="@+id/ivKasir"
+            app:layout_constraintStart_toStartOf="@+id/ivKasir"
+            app:layout_constraintTop_toTopOf="@+id/ivKasir" />
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMagist"
+            app:layout_constraintEnd_toStartOf="@+id/tvMagist"
+            app:layout_constraintHorizontal_bias="0.135"
+            app:layout_constraintStart_toStartOf="@+id/ivKasir"
+            app:layout_constraintTop_toTopOf="@+id/tvMagist"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/menu" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMagist"
+            app:layout_constraintEnd_toEndOf="@+id/ivKasir"
+            app:layout_constraintHorizontal_bias="0.863"
+            app:layout_constraintStart_toEndOf="@+id/tvMagist"
+            app:layout_constraintTop_toTopOf="@+id/tvMagist"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/search_1" />
+
+        <TextView
+            android:id="@+id/tvPilihanBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="164dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Pilihan Barang"
+            android:textColor="#304BFF"
+            android:textColorHint="#304BFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="386dp"
+            android:layout_height="471dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.64"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPilihanBarang"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPilihanBarang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_list_kasir"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
