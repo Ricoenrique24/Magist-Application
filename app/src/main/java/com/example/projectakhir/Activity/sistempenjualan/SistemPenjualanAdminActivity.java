@@ -11,6 +11,6 @@ public class SistemPenjualanAdminActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sistem_penjualan_admin);
+        setContentView(R.layout.activity_sistem_penjualan_test);
     }
 }
