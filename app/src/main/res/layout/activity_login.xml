@@ -27,6 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
             android:text="LOGIN"
             android:textColor="#304BFF"
             android:textSize="25dp"
@@ -38,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-medium"
             android:text="Masukan Email dan Password Untuk Login"
             android:textColor="#304BFF"
             android:textSize="15dp"></TextView>
@@ -61,7 +63,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:textColor="#304BFF" />
+                android:textColor="#304BFF"
+                android:textColorHint="#304BFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -91,8 +94,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
+            android:background="#2196F3"
+            android:fontFamily="sans-serif-black"
             android:text="login"
-            android:textColorHint="#304BFF" />
+            android:textColor="@color/white"
+            android:textColorHint="#304BFF"
+            android:textSize="16sp" />
 
 
     </LinearLayout>
