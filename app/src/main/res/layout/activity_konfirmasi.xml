@@ -26,12 +26,14 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/tvNamaPembeli"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama Pembeli : "
             android:textColor="#304BFF"></TextView>
 
         <TextView
+            android:id="@+id/tvPembeli"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ENRIQUE"
@@ -39,6 +41,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tvPilihanBarang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -48,11 +51,14 @@
         android:textStyle="bold"></TextView>
 
     <ScrollView
+        android:id="@+id/svProduk"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp">
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProduk"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:listitem="@layout/item_list_kasir">
@@ -61,21 +67,24 @@
     </ScrollView>
 
     <LinearLayout
+        android:id="@+id/llHarga"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingRight="20dp"
+        android:orientation="vertical"
         android:paddingLeft="20dp"
-        android:orientation="vertical">
+        android:paddingRight="20dp">
 
         <LinearLayout
+            android:id="@+id/llTotalHarga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/tvTotalHarga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
@@ -85,6 +94,7 @@
                 android:textStyle="bold"></TextView>
 
             <TextView
+                android:id="@+id/tvHargaTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="100.000"
@@ -95,17 +105,18 @@
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilBayar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Bayar"
-            app:startIconTint="#4f5455"
+            android:layout_marginBottom="10dp"
             android:background="@color/white"
+            android:hint="Bayar"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
             app:endIconMode="clear_text"
             app:endIconTint="@color/black"
             app:helperTextTextColor="@color/red"
-            android:textColorHint="@color/black"
-            app:boxStrokeColor="@color/black"
-            android:layout_marginBottom="10dp">
+            app:startIconTint="#4f5455">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_email"
@@ -117,6 +128,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/btnKonfirmasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

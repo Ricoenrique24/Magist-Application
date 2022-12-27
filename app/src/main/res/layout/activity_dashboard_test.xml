@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/ivBackgroundDashboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,7 @@
             app:srcCompat="@drawable/back" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvDashboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -38,11 +38,11 @@
             android:textStyle="bold"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/ivMenuDashboard"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/ivMenuDashboard"
             android:layout_width="40dp"
             android:layout_height="35dp"
             android:layout_marginStart="16dp"
@@ -69,7 +69,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvRingkasanBisnisDashboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -114,6 +114,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clGrafikPenjualan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
@@ -164,7 +165,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/ivKeuntungan1"
                 android:layout_width="378dp"
                 android:layout_height="142dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -173,7 +174,7 @@
                 app:srcCompat="@drawable/border_dashboard" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/tvKeuntungan2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -184,7 +185,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/tvKeuntungan3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -195,27 +196,28 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clGraifikKeuntungan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="8dp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintBottom_toBottomOf="@+id/ivKeuntungan1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10">
+                app:layout_constraintTop_toBottomOf="@+id/tvKeuntungan2">
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/imKeuntungan1"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="#6127E4"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView9"
+                    app:layout_constraintEnd_toStartOf="@+id/imKeuntungan2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/imKeuntungan2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -224,7 +226,7 @@
                     app:srcCompat="@drawable/birumuda" />
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/imKeuntungan3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="24dp"
@@ -240,12 +242,13 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
+            android:id="@+id/llSttokMenipis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/tvStolkmenipis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="STOK MENIPIS"
@@ -254,12 +257,13 @@
                 android:textStyle="bold" />
 
             <LinearLayout
+                android:id="@+id/llBarangStockRendah"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView17"
+                    android:id="@+id/tvStokTerendah"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -268,7 +272,7 @@
                     android:textSize="10sp" />
 
                 <TextView
-                    android:id="@+id/textView18"
+                    android:id="@+id/tvLihatSemuaStok"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
