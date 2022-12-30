@@ -69,6 +69,20 @@
             android:layout_marginBottom="8dp"
             android:text="konfirmasi" />
 
+        <Button
+            android:id="@+id/btnKeluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Logout" />
+
+        <Button
+            android:id="@+id/btnNavigationDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Navigation Drawer" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

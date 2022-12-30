@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.projectakhir" >
+    package="com.example.projectakhir">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +14,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-        tools:targetApi="31" >
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.MenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
             android:name=".Activity.sistempenjualan.Konfirmasi"
             android:exported="false" />
@@ -23,9 +31,6 @@
             android:name=".Activity.sistempenjualan.PilihBarangActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.main.SplasActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activity.dashboard.DashboardActivity"
             android:exported="false" />
         <activity
@@ -33,7 +38,10 @@
             android:exported="true" />
         <activity
             android:name=".Activity.main.MainActivity"
-            android:exported="true" >
+            android:exported="true" />
+        <activity
+            android:name=".Activity.main.SplasActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
