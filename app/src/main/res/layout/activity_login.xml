@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:hint="Email"
+            android:hint="Username"
             android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:endIconMode="clear_text"
@@ -60,7 +60,7 @@
             app:startIconTint="#4f5455">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_bayar"
+                android:id="@+id/input_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -105,5 +105,11 @@
 
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

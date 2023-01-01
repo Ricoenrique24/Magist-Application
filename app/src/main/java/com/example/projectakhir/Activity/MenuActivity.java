@@ -12,11 +12,12 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 
-
-import com.example.projectakhir.Activity.login.LoginActivity;
+import com.example.projectakhir.API.APIRequestData;
+import com.example.projectakhir.API.RetroServer;
 import com.example.projectakhir.Activity.main.MainActivity;
-import com.example.projectakhir.Activity.sistempenjualan.Konfirmasi;
 import com.example.projectakhir.Activity.sistempenjualan.PilihBarangActivity;
+import com.example.projectakhir.Adapter.AdapterData;
+import com.example.projectakhir.Model.ResponseModel;
 import com.example.projectakhir.R;
 import com.example.projectakhir.databinding.ActivityMenuBinding;
 import com.google.android.material.snackbar.Snackbar;
@@ -28,6 +29,10 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -43,7 +48,7 @@ public class MenuActivity extends AppCompatActivity {
 
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.appBarMenu.topbar);
+//        setSupportActionBar(binding.appBarMenu.topbar);
 
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
@@ -56,8 +61,6 @@ public class MenuActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menu);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
-        // Kofigurasi Setelah fragment telah terload!
     }
 
     @Override
@@ -115,5 +118,10 @@ public class MenuActivity extends AppCompatActivity {
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
+    }
+
+    private void selectInfoDashboard(){
+        APIRequestData arData = RetroServer.connectRetro().create(APIRequestData.class);
+        Call<ResponseModel> infoDashboard = arData.selectData();
     }
 }
